@@ -9,7 +9,19 @@ import java.sql.SQLException;
 import java.sql.*;
 
 public class PersonCheckDao {
-    private static final String SQL_REQUEST = "";
+    private static final String SQL_REQUEST =
+            "select temporal from cr_address_person ap" +
+                    "         inner join cr_person p on p.person_id = ap.person_id " +
+                    "         inner join cr_address a on a.address_id = ap.address_id " +
+                    "where upper(p.sur_name COLLATE \"ru_RU.utf8\") = upper(? COLLATE \"ru_RU.utf8\")" +
+                    "  and upper(p.given_name) = upper(? COLLATE \"ru_RU.utf8\")" +
+                    "  and upper(patronymic COLLATE \"ru_RU.utf8\") = upper(? COLLATE \"ru_RU.utf8\")" +
+                    "  and p.date_of_birth = ?" +
+                    "  and a.street_code = ?" +
+                    "  and upper(a.building COLLATE \"ru_RU.utf8\") = upper(? COLLATE \"ru_RU.utf8\")" +
+                    "  and upper(extension COLLATE \"ru_RU.utf8\") = upper(? COLLATE \"ru_RU.utf8\")" +
+                    "  and upper(a.apartment COLLATE \"ru_RU.utf8\") = upper(? COLLATE \"ru_RU.utf8\")";
+
 
     public PersonResponse checkPerson(PersonRequest request) throws PersonCheckException {
         PersonResponse response = new PersonResponse();

@@ -66,7 +66,7 @@ public class PersonCheckDao {
     }
 
     private Connection getConnection() throws SQLException {
-        return DriverManager.getConnection("jdbc:postgresql://127.0.0.1:5432/postgres",
+        return DriverManager.getConnection("jdbc:postgresql://127.0.0.1:5432/city_register",
                 "greem", "414510");
     }
 }

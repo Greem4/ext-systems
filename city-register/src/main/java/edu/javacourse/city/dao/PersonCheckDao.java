@@ -22,18 +22,6 @@ public class PersonCheckDao {
                     "  and upper(extension COLLATE \"ru_RU.utf8\") = upper(? COLLATE \"ru_RU.utf8\") " +
                     "  and upper(a.apartment COLLATE \"ru_RU.utf8\") = upper(? COLLATE \"ru_RU.utf8\") " ;
 
-//    private static final String SQL_REQUEST =
-//            "select temporal from cr_address_person ap " +
-//                    "inner join cr_person p on p.person_id = ap.person_id " +
-//                    "inner join cr_address a on a.address_id = ap.address_id " +
-//                    "where " +
-//                    "CURRENT_DATE >= ap.start_date and (CURRENT_DATE <= ap.end_data or ap.end_data is null)" +
-//                    "and upper(p.sur_name COLLATE \"en_US.UTF-8\") = upper(? COLLATE \"en_US.UTF-8\")  " +
-//                    "and upper(p.given_name COLLATE \"en_US.UTF-8\") = upper(? COLLATE \"en_US.UTF-8\")  " +
-//                    "and upper(patronymic COLLATE \"en_US.UTF-8\") = upper(? COLLATE \"en_US.UTF-8\")  " +
-//                    "and p.date_of_birth = ? " +
-//                    "and a.street_code = ?  " +
-//                    "and upper(a.building COLLATE \"en_US.UTF-8\") = upper(? COLLATE \"en_US.UTF-8\")  ";
 
 
     public PersonResponse checkPerson(PersonRequest request) throws PersonCheckException {

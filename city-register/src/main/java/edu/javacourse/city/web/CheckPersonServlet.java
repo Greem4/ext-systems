@@ -6,7 +6,10 @@ package edu.javacourse.city.web;
 import edu.javacourse.city.dao.PersonCheckDao;
 import edu.javacourse.city.domain.PersonRequest;
 import edu.javacourse.city.domain.PersonResponse;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -16,6 +19,16 @@ import java.time.LocalDate;
 
 @WebServlet(name = "CheckPersonServlet", urlPatterns = {"/checkPerson"})
 public class CheckPersonServlet extends HttpServlet {
+
+    private static final Logger logger = LoggerFactory.getLogger(CheckPersonServlet.class); // Через slf4j-jdk14(в dependency)
+                                                                                            // Записывает логи в tomcat
+    private PersonCheckDao dao;
+
+    @Override
+    public void init() throws ServletException {
+        logger.info("SERVLET is created");
+        dao = new PersonCheckDao();
+    }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws  IOException {

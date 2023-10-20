@@ -12,7 +12,7 @@ import java.io.IOException;
 public class CheckPersonServlet extends HttpServlet {
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws  IOException {
         resp.getWriter().println("Get CheckPerson - called");
     }
 }

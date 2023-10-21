@@ -24,6 +24,8 @@ public class PersonCheckDao {
                     "  and a.street_code = ? " +
                     "  and upper(a.building COLLATE \"ru_RU.utf8\") = upper(? COLLATE \"ru_RU.utf8\") ";
 
+
+
     private ConnectionBuilder connectionBuilder;
     public void setConnectionBuilder(ConnectionBuilder connectionBuilder) {
         this.connectionBuilder = connectionBuilder;
@@ -31,6 +33,7 @@ public class PersonCheckDao {
     private Connection getConnection() throws SQLException {
         return connectionBuilder.getConnection();
     }
+
     public PersonResponse checkPerson(PersonRequest request) throws PersonCheckException {
         PersonResponse response = new PersonResponse();
 

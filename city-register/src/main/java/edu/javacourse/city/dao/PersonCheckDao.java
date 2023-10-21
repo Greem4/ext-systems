@@ -4,9 +4,11 @@ import edu.javacourse.city.domain.PersonRequest;
 import edu.javacourse.city.domain.PersonResponse;
 import edu.javacourse.city.exception.PersonCheckException;
 
+
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.*;
+
 
 public class PersonCheckDao {
     private static final String SQL_REQUEST =
@@ -22,14 +24,13 @@ public class PersonCheckDao {
                     "  and a.street_code = ? " +
                     "  and upper(a.building COLLATE \"ru_RU.utf8\") = upper(? COLLATE \"ru_RU.utf8\") ";
 
-    public PersonCheckDao() {
-        try {
-            Class.forName("org.postgresql.Driver");
-        }catch (Exception e) {
-            e.printStackTrace();
-        }
+    private ConnectionBuilder connectionBuilder;
+    public void setConnectionBuilder(ConnectionBuilder connectionBuilder) {
+        this.connectionBuilder = connectionBuilder;
     }
-
+    private Connection getConnection() throws SQLException {
+        return connectionBuilder.getConnection();
+    }
     public PersonResponse checkPerson(PersonRequest request) throws PersonCheckException {
         PersonResponse response = new PersonResponse();
 
@@ -71,12 +72,8 @@ public class PersonCheckDao {
         } catch (SQLException ex) {
             throw new PersonCheckException(ex);
         }
-
         return response;
     }
 
-    private Connection getConnection() throws SQLException {
-        return DriverManager.getConnection("jdbc:postgresql://127.0.0.1:5432/city_register",
-                "greem", "414510");
-    }
+
 }

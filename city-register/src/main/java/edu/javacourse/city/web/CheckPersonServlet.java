@@ -4,6 +4,7 @@ package edu.javacourse.city.web;
 
 
 import edu.javacourse.city.dao.PersonCheckDao;
+import edu.javacourse.city.dao.PoolConnectionBuilder;
 import edu.javacourse.city.domain.PersonRequest;
 import edu.javacourse.city.domain.PersonResponse;
 import org.slf4j.Logger;
@@ -28,6 +29,7 @@ public class CheckPersonServlet extends HttpServlet {
     public void init() throws ServletException {
         logger.info("SERVLET is created");
         dao = new PersonCheckDao();
+        dao.setConnectionBuilder(new PoolConnectionBuilder());
     }
 
     @Override

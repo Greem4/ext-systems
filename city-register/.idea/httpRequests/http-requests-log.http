@@ -3,51 +3,6 @@ Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-10-21T235715.200.txt
-
-###
-
-GET http://localhost:8080/city-register-1.0/rest/check
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T235546.200.txt
-
-###
-
-GET http://localhost:8080/city-register-1.0/rest/check
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T235020.500.html
-
-###
-
-GET http://localhost:8080/city-register-1.0/rest/check
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T234145.500.html
-
-###
-
-GET http://localhost:8080/city-register-1.0/rest/check
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-21T234025.500.html
-
-###
-
-GET http://localhost:8080/city-register-1.0/rest/check
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
 <> 2023-10-21T225655.200.txt
 
 ###

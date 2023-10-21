@@ -48,7 +48,6 @@ public class CheckPersonServlet extends HttpServlet {
         pr.setApartment("121");
 
         try {
-            PersonCheckDao dao = new PersonCheckDao();
             PersonResponse ps = dao.checkPerson(pr);
             if (ps.isRegistered()) {
                 resp.getWriter().write("Registered");

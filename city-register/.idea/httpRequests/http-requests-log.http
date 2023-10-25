@@ -1,3 +1,213 @@
+POST http://localhost:8080/city-register-1.0/rest/check
+Content-Type: application/json
+Content-Length: 216
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "apartment": "121",
+  "building": "10",
+  "dateOfBirth": "18.03.1995",
+  "extension": "2",
+  "givenName": "Павел",
+  "patronymic": "Николаевич",
+  "streetCode": 1,
+  "surName": "Васильев"
+}
+
+<> 2023-10-25T205535.200.json
+
+###
+
+POST http://localhost:8080/city-register-1.0/rest/check
+Content-Type: application/json
+Content-Length: 216
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "apartment": "121",
+  "building": "10",
+  "dateOfBirth": "18.03.1995",
+  "extension": "2",
+  "givenName": "Павел",
+  "patronymic": "Николаевич",
+  "streetCode": 1,
+  "surName": "Васильев"
+}
+
+<> 2023-10-25T202257.200.json
+
+###
+
+POST http://localhost:8080/city-register-1.0/rest/check
+Content-Type: application/json
+Content-Length: 216
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "apartment": "121",
+  "building": "10",
+  "dateOfBirth": "1995-03-18",
+  "extension": "2",
+  "givenName": "Павел",
+  "patronymic": "Николаевич",
+  "streetCode": 1,
+  "surName": "Васильев"
+}
+
+<> 2023-10-25T201543.200.json
+
+###
+
+POST http://localhost:8080/city-register-1.0/rest/check
+Content-Type: application/json
+Content-Length: 216
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "apartment": "121",
+  "building": "10",
+  "dateOfBirth": "1995-03-18",
+  "extension": "2",
+  "givenName": "Павел",
+  "patronymic": "Николаевич",
+  "streetCode": 1,
+  "surName": "Васильев"
+}
+
+<> 2023-10-25T200815.200.json
+
+###
+
+POST https://ijhttp-examples.jetbrains.com/post
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 59
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+id=999&value=content&fact=IntelliJ+%2B+HTTP+Client+%3D+%3C3
+
+<> 2023-10-25T200658.200.json
+
+###
+
+POST https://ijhttp-examples.jetbrains.com/post
+Content-Type: application/json
+Content-Length: 41
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+    "id": 999,
+    "value": "content"
+}
+
+<> 2023-10-25T200652.200.json
+
+###
+
+GET http://localhost:8080/city-register-1.0/rest/check
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-25T200622.405.html
+
+###
+
+POST http://localhost:8080/city-register-1.0/rest/check
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-25T200619.500.html
+
+###
+
+POST http://localhost:8080/city-register-1.0/rest/check
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-25T200434.500.html
+
+###
+
+POST http://localhost:8080/city-register-1.0/rest/check
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-25T200431.500.html
+
+###
+
+GET http://localhost:8080/city-register-1.0/rest/check
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-25T200429.405.html
+
+###
+
+GET http://localhost:8080/city-register-1.0/rest/check
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-25T171122.200.json
+
+###
+
+GET http://localhost:8080/city-register-1.0/rest/check/15?name=Simple
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-25T171006.404.html
+
+###
+
+GET http://localhost:8080/city-register-1.0/rest/check
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-24T192402.200.json
+
+###
+
+GET http://localhost:8080/city-register-1.0/rest/check/15?name=Simple
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-24T182819.200.json
+
+###
+
+GET http://localhost:8080/city-register-1.0/rest/check/15?name=Simple
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-24T182808.200.json
+
+###
+
 GET http://localhost:8080/city-register-1.0/rest/check/15?name=Simple
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)

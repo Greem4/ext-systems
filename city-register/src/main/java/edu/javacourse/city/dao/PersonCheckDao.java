@@ -16,7 +16,7 @@ public class PersonCheckDao {
                     "         inner join cr_person p on p.person_id = ap.person_id " +
                     "         inner join cr_address a on a.address_id = ap.address_id " +
                     "where " +
-                    "CURRENT_DATE >= ap.start_date and (CURRENT_DATE <= ap.end_data or ap.end_data is null) " +
+                    "CURRENT_DATE >= ap.start_date and (CURRENT_DATE <= ap.end_date or ap.end_date is null) " +
                     "  and upper(p.sur_name COLLATE \"ru_RU.utf8\") = upper(? COLLATE \"ru_RU.utf8\") " +
                     "  and upper(p.given_name) = upper(? COLLATE \"ru_RU.utf8\")" +
                     "  and upper(patronymic COLLATE \"ru_RU.utf8\") = upper(? COLLATE \"ru_RU.utf8\") " +

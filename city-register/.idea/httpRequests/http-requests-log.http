@@ -16,6 +16,50 @@ Accept-Encoding: br,deflate,gzip,x-gzip
   "surName": "Васильев"
 }
 
+<> 2023-10-26T123951.200.json
+
+###
+
+POST http://localhost:8080/city-register-1.0/rest/check
+Content-Type: application/json
+Content-Length: 216
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "apartment": "121",
+  "building": "10",
+  "dateOfBirth": "18.03.1995",
+  "extension": "2",
+  "givenName": "Павел",
+  "patronymic": "Николаевич",
+  "streetCode": 1,
+  "surName": "Васильев"
+}
+
+<> 2023-10-26T123946.200.json
+
+###
+
+POST http://localhost:8080/city-register-1.0/rest/check
+Content-Type: application/json
+Content-Length: 216
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "apartment": "121",
+  "building": "10",
+  "dateOfBirth": "18.03.1995",
+  "extension": "2",
+  "givenName": "Павел",
+  "patronymic": "Николаевич",
+  "streetCode": 1,
+  "surName": "Васильев"
+}
+
 <> 2023-10-25T234841.200.json
 
 ###
@@ -818,24 +862,6 @@ User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 <> 2023-10-22T204548.200.txt
-
-###
-
-GET http://localhost:8080/city-register-1.0/rest/check/15?name=Simple
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-22T204506.500.html
-
-###
-
-GET http://localhost:8080/city-register-1.0/rest/check/15?name=Simple
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-22T204314.500.html
 
 ###
 

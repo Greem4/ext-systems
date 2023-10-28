@@ -9,6 +9,6 @@ public class DirectConnectionBuilder implements ConnectionBuilder
     @Override
     public Connection getConnection() throws SQLException {
         return DriverManager.getConnection("jdbc:postgresql://localhost/city_register",
-                "greem", "414510");
+                "greem", "4145");
     }
 }

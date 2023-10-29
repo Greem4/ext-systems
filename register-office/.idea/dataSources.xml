@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="postgres@localhost" uuid="745bd366-e590-49ed-b886-fc1ca5973b9d">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/postgres</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate.cfg.xml/Hibernate" uuid="029062de-4351-458c-8461-fdfff382a5b6">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+/home/greem/IdeaProjects/ext-systems/register-office/src/main/resources/hibernate.cfg.xml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost/register_office</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>

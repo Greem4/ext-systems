@@ -7,6 +7,7 @@ import java.time.LocalDate;
 @NamedQuery(name = "MarriageCertificate.findByNum",
         query = "SELECT mc FROM MarriageCertificate mc WHERE mc.number = :number")
 public class MarriageCertificate {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "marriage_certificate_id")

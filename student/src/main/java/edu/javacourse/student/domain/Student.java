@@ -16,8 +16,8 @@ public class Student {
     private String lastName;
     @Column(name = "first_name")
     private String firstName;
-    @Column(name = "midle_name")
-    private String midleName;
+    @Column(name = "middle_name")
+    private String middleName;
     @Column(name = "date_of_birth")
     private LocalDate dateOfBirth;
     @Column(name = "passport_seria")
@@ -53,12 +53,12 @@ public class Student {
         this.firstName = firstName;
     }
 
-    public String getMidleName() {
-        return midleName;
+    public String getMiddleName() {
+        return middleName;
     }
 
-    public void setMidleName(String midleName) {
-        this.midleName = midleName;
+    public void setMiddleName(String midleName) {
+        this.middleName = midleName;
     }
 
     public LocalDate getDateOfBirth() {

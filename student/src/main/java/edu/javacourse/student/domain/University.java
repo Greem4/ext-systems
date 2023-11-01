@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
 
-@Table(name = "sr_student")
+@Table(name = "sr_university")
 @Entity
 public class University {
 

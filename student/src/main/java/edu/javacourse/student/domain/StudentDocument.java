@@ -3,7 +3,7 @@ package edu.javacourse.student.domain;
 import javax.persistence.*;
 import java.time.LocalDate;
 
-@Table(name = "sr_student_dociment")
+@Table(name = "sr_student_document")
 @Entity
 public class StudentDocument {
 
@@ -19,7 +19,7 @@ public class StudentDocument {
     private LocalDate expiredDate;
     @ManyToOne(cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
     @JoinColumn(name = "student_id")
-    private Student studentId;
+    private Student student;
     @ManyToOne(cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
     @JoinColumn(name = "faculty_id")
     private Faculty faculty;
@@ -59,12 +59,12 @@ public class StudentDocument {
         this.expiredDate = expiredDate;
     }
 
-    public Student getStudentId() {
-        return studentId;
+    public Student getStudent() {
+        return student;
     }
 
-    public void setStudentId(Student studentId) {
-        this.studentId = studentId;
+    public void setStudent(Student student) {
+        this.student = student;
     }
 
     public Faculty getFaculty() {

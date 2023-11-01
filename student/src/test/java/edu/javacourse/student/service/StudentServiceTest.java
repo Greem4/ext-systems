@@ -19,6 +19,7 @@ public class StudentServiceTest {
 
     @Test
     public void simpleTest() {
+        studentService.simpleCell();
         LOGGER.info("DONE !!!");
     }
 

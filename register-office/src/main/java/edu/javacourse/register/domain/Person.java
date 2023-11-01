@@ -17,7 +17,7 @@ import java.util.List;
                 " where p.personId = :personId")
 })
 
-public class Person {
+public abstract class Person {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

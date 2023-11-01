@@ -1,6 +1,7 @@
 package edu.javacourse.register.dao;
 
 import edu.javacourse.register.domain.Person;
+import edu.javacourse.register.domain.PersonMale;
 
 import javax.persistence.*;
 import java.util.List;
@@ -13,5 +14,11 @@ public class PersonDao {
         Query query = entityManager.createNamedQuery("Person.findPersons");
         query.setParameter("personId", 1L);
         return query.getResultList();
+    }
+
+    public Long addPerson(Person person) {
+        entityManager.persist(person);
+        entityManager.flush();
+        return person.getPersonId();
     }
 }

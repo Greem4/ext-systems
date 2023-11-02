@@ -1,3 +1,25 @@
+POST http://localhost:8080/student-1.0/rest/student
+Accept-Post:
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-02T171724.500.html
+
+###
+
+POST http://localhost:8080/student-1.0/rest/student
+Accept-Post:
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-02T171719.500.html
+
+###
+
 POST http://localhost:8080/city-register-1.0/rest/check
 Content-Type: application/json
 Content-Length: 216
@@ -844,24 +866,6 @@ User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 <> 2023-10-22T204655.200.txt
-
-###
-
-GET http://localhost:8080/city-register-1.0/rest/check/15?name=Simple
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-22T204630.200.txt
-
-###
-
-GET http://localhost:8080/city-register-1.0/rest/check/15?name=Simple
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-10-22T204548.200.txt
 
 ###
 

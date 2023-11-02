@@ -1,4 +1,4 @@
-package edu.javacourse.student.domain.dao;
+package edu.javacourse.student.dao;
 
 import edu.javacourse.student.domain.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -20,6 +20,5 @@ public interface StudentRepository extends JpaRepository<Student, Long> {
                               @Param("passportSeria")String passportSeria,
                               @Param("passportNumber")String passportNumber,
                               @Param("passportDate") LocalDate passportDate
-
     );
 }

@@ -2,7 +2,7 @@ package edu.javacourse.student.service;
 
 import edu.javacourse.student.domain.Student;
 import edu.javacourse.student.domain.StudentDocument;
-import edu.javacourse.student.domain.dao.StudentRepository;
+import edu.javacourse.student.dao.StudentRepository;
 import edu.javacourse.student.view.StudentRequest;
 import edu.javacourse.student.view.StudentResponse;
 import org.slf4j.Logger;

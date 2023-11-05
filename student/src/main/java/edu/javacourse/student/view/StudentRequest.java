@@ -1,6 +1,8 @@
 package edu.javacourse.student.view;
 
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+
 import java.time.LocalDate;
 
 public class StudentRequest {
@@ -8,11 +10,13 @@ public class StudentRequest {
     private String lastName;
     private String firstName;
     private String middleName;
-    @XmlJavaTypeAdapter(value = LocalDateAdapter.class)
+    @JsonSerialize(converter = LocalDateStringConverter.class)
+    @JsonDeserialize(converter = StringLocalDateConverter.class)
     private LocalDate dataOfBerth;
     private String passportNumber;
     private String passportSeria;
-    @XmlJavaTypeAdapter(value = LocalDateAdapter.class)
+    @JsonSerialize(converter = LocalDateStringConverter.class)
+    @JsonDeserialize(converter = StringLocalDateConverter.class)
     private LocalDate passportDate;
 
     public String getLastName() {
